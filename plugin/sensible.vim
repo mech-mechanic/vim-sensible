@@ -2,6 +2,8 @@
 " Maintainer:   Tim Pope <http://tpo.pe/>
 " Version:      1.1
 
+colorscheme badwolf
+
 if exists('g:loaded_sensible') || &compatible
   finish
 else
@@ -22,6 +24,11 @@ set backspace=indent,eol,start
 set complete-=i
 set smarttab
 
+" Tabs as per Rails conventions
+
+set tabstop=4
+set softtabstop=2
+set expandtab
 set nrformats-=octal
 
 if !has('nvim') && &ttimeoutlen == -1
